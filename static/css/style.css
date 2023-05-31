@@ -1,14 +1,13 @@
 body {
-  font-family: 'Poppins', sans-serif;
-  background-color: #aeaeae;
-
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    background-color: #aeaeae;
 }
 
 h1 {
   font-size: 45px;
   text-align: center;
   color: #333;
-  text-decoration: underline;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
 }
 
 #chat {
