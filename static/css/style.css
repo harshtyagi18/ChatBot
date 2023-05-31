@@ -1,14 +1,14 @@
 body {
-    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-    background-color: #aeaeae;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  background-color: #aeaeae;
 }
-
 h1 {
   font-size: 45px;
   text-align: center;
-  color: #333;
+  color: #333333;
   font-family: -apple-system, BlinkMacSystemFont, sans-serif;
 }
+
 
 #chat {
   background-color: white;
@@ -38,7 +38,8 @@ h1 {
   margin-top: 2%;
   box-shadow: 5px 5px;
   margin-right: 10px;
-  display: inline-block;
+  display: inline;
+  
 }
 
 button {
@@ -51,8 +52,9 @@ button {
   box-shadow: 5px 5px;
   border-radius: 5px;
   cursor: pointer;
-  display: inline-block;
+  display: inline;
   vertical-align: bottom;
+  margin-top: 15px;
 }
 
 button:hover {
