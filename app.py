@@ -3,7 +3,7 @@ import openai
 
 app = Flask(__name__)
 
-openai.api_key = 'API_KEY'
+openai.api_key = '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'
 
 @app.route('/')
 def index():
@@ -13,15 +13,13 @@ def index():
 def send_message():
     message = request.json['message']
     completion = openai.Completion.create(
-        engine="text-davinci-003",
+        model="text-davinci-003",
         prompt=message,
-        max_tokens=1024,
-        n=1,
-        stop=None,
-        temperature=0.5,
-    )
+        temperature=1,
+        max_tokens=256,
+)
     response = {'message': completion.choices[0].text.strip()}
-    return jsonify(response)
+    return jsonify(response)    
 
 
 if __name__=='__main__':
